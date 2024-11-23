@@ -1,0 +1,88 @@
+
+  /*nextpage*/
+  body {
+    background-image: url('background.jpg');
+    /* Add other CSS properties here if needed */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .next-button {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .next-button:hover {
+    background-color: blue;
+  }
+  /*nextnext page*/
+  body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%; /* Adjust width as needed */
+    margin: auto;
+    padding: 20px;
+    background-color: white(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px black(0, 0, 0, 0.3); /* Drop shadow effect */
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container form {
+    text-align: center;
+}
+
+.container label {
+    display: inline-block;
+    width: 150px; /* Adjust label width as needed */
+    text-align: left;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="date"],
+.container textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"],
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.container input[type="submit"]:hover,
+.container a:hover {
+    background-color: blueviolet;
+}

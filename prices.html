@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List with Images</title>
+<style>
+  body{
+    background-image: url(pink.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+h2 {
+  font-size: 36px; /* Increase font size */
+  color: #333; /* Dark gray color */
+  margin-bottom: 20px;
+  text-align: center; /* Center align the heading */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  font-family: 'Arial Black', sans-serif; /* Use a bold font */
+  position: relative; /* Enable positioning for pseudo-element */
+}
+
+/* Pseudo-element for decorative underline */
+h2::after {
+  content: '';
+  display: block;
+  width: 100px; /* Width of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: #ff6347; /* Red color */
+  position: absolute;
+  bottom: -10px; /* Position the underline below the heading */
+  left: 50%; /* Center the underline */
+  transform: translateX(-50%); /* Center the underline horizontally */
+}
+
+/* Style the list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Add gap between items */
+}
+
+/* Style the list items */
+li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: calc(33.33% - 20px); /* Distribute items equally in a row with some margin */
+  margin-bottom: 10px; /* Reduce space between rows */
+  position: relative;
+  display: flex; /* Add flexbox to the list items */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Hover effect for list items */
+li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Style the spans inside list items */
+li span {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Style the image container */
+li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  align-self: center; /* Center the image horizontally */
+}
+
+/* Hover effect for images */
+li:hover img {
+  transform: scale(1.1);
+}
+
+/* Style the button container */
+.btn-container {
+  margin-top: auto; /* Push buttons to the bottom */
+  text-align: center; /* Center align the buttons */
+}
+
+/* Style the button */
+/* Style the button */
+.btn {
+  background-color: darkgray; /* Blue color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Set height to full viewport height */
+}
+</style>
+</head>
+<body>
+
+<h2>Prices of Cakes</h2>
+
+<!-- List of items with images -->
+<ul>
+  <li>
+    <img src="chocolate truffle.jpg" alt="Image 1">
+    <span>Chocolate Truffle</span>
+    <span>Price: Rs.800/kg</span>
+    <div class="btn-container">
+      <a href="next_next_page.php" class="btn">ORDER NOW</a>
+    </div>
+  </li>
+  <li>
+    <img src="redvelvet cake.jpg" alt="Image 2">
+    <span>Red Velvet Cake</span>
+    <span>Prices: Rs.1200/kg</span>
+    <div class="btn-container">
+      <a href="next_next_page.php" class="btn">ORDER NOW</a>
+    </div>
+  </li>
+  <li>
+    <img src="Strawberry Cake.jpg" alt="Image 3">
+    <span>Strawberry Cake</span>
+    <span>Prices: Rs.1000/kg</span>
+    <div class="btn-container">
+      <a href="next_next_page.php" class="btn">ORDER NOW</a>
+    </div>
+  </li>
+  <li>
+    <img src="vanilla cake.jpg" alt="Image 1">
+    <span>Vanilla Cake</span>
+    <span>Price: Rs.800/kg</span>
+    <div class="btn-container">
+      <a href="next_next_page.php" class="btn">ORDER NOW</a>
+    </div>
+  </li>
+  <li>
+    <img src="blackforest.jpg" alt="Image 2">
+    <span>Black Forest</span>
+    <span>Prices: Rs.900/kg</span>
+    <div class="btn-container">
+      <a href="next_next_page.php" class="btn">ORDER NOW</a>
+    </div>
+  </li>
+  <li>
+    <img src="marbel cake.jpg" alt="Image 3">
+    <span>Marble Cake</span>
+    <span>Prices: Rs.1000/kg</span>
+    <div class="btn-container">
+      <a href="next_next_page.php" class="btn">ORDER NOW</a>
+    </div>
+  </li>
+</ul>
+<div class="button-container">
+  <a href="home.html" class="btn">Home</a>
+</div>
+</body>
+</html>

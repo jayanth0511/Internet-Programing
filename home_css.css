@@ -1,0 +1,358 @@
+
+/* Add your other CSS rules below */
+
+/* style.css */
+
+/* CSS Reset */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;/* Added box-sizing for better layout handling */
+}
+
+/* Header Styling */
+#top {
+	color: darkorange;
+	text-align: center;
+	font-size: 4rem; /* Changed font size to a relative unit */
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#top1 {
+	text-align: center;
+	color: darkslateblue;
+	font-size: rem; /* Changed font size to a relative unit */
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navigation bar styling */
+/* Navbar image styling */
+#navbar img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: auto;
+}
+
+/* Navbar Functionality */
+#navbar {
+	display: flex;
+	flex-direction: column;
+	background-color: lightslategray;
+	height: 14vh;
+	width: 100vw;
+	font-family: 'Times New Roman', Times, serif;
+	margin-top: 3px;
+	border: 3px solid darkorchid;
+	border-radius: 8px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Navbar content functionality */
+#navcontent {
+	display: flex;
+	justify-content: center;
+}
+
+/* Navbar content styling */
+ul li {
+	list-style: none;
+	margin: 15px;
+	border-radius: 20px;
+}
+
+ul li a {
+	padding: 1px;
+	color: black;
+	font-size: 25px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+ul li a:hover {
+	background-color: red;
+	border-radius: 10px;
+}
+
+/* Website background image designing */
+#container1 {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Setting the background image using before pseudo selector */
+#container1::before {
+	content: '';
+	background: url("pngtree-cake-strawberry-cake-shop-background-image_2376340.jpg") no-repeat center center/cover;
+	width: 100vw;
+	height: 59vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: bold;
+	z-index: -1;
+	opacity: 0.89;
+	border: 4px solid rgb(8, 6, 6);
+	border-bottom-left-radius: 100px;
+}
+
+/* Rest of the CSS remains unchanged for the sake of clarity */
+
+
+#row1 {
+    text-align: center; /* Center align the text */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #800020;
+    color: whitesmoke; /* Blue background color */ /* White text color */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+#row1 {
+	text-shadow: 2px 7px 16px 19px;
+	text-decoration-color: blue;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 35px;
+}
+
+/*Button Styling*/
+.btn {
+	margin-top: 15px;
+	border: 3px solid whitesmoke;
+	border-radius: 15px;
+	background-color: deeppink;
+	font-size: 20px;
+	font-weight: bolder;
+	height: fit-content;
+	width: fit-content;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: whitesmoke;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: goldenrod;
+}
+
+#container3 {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#row2 {
+	width: 24vw;
+	height: 21vh;
+	box-shadow: 1px 2px 7px 10px;
+	margin-top: 51px;
+	margin-bottom: 51px;
+	background: url("prices1.jpg") no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	margin-right: 38px;
+	border-radius: 40px;
+}
+
+#row2::before {
+	content: '';
+	background: url("prices.jpeg") no-repeat center center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 15vw;
+	height: 10vh;
+	z-index: -1;
+	border-radius: 40px;
+}
+
+#row3 {
+	position: relative;
+	width: 24vw;
+	height: 21vh;
+	background: url('chocolate\ truffle.jpg') no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	box-shadow: 1px 2px 7px 10px;
+	margin-top: 51px;
+	margin-bottom: 51px;
+	margin-left: 38px;
+	border-radius: 40px;
+}
+
+#row3::before {
+	content: '';
+	background: url('chocolate\ truffle.jpg') no-repeat center center/cover;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 24vw;
+	height: 21vh;
+	z-index: -1;
+	border-radius: 40px;
+}
+
+#top3 {
+	text-align: center;
+	color: darkcyan;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container4 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	margin: 41px;
+}
+
+#row4 {
+	width: 29vw;
+	height: 360px;
+	border: 2px solid lightslategrey;
+	background: url("redvelvet\ cake.jpg") no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	border-radius: 15px;
+}
+
+#row5 {
+	width: 29vw;
+	height: 360px;
+	border: 2px solid lightslategray;
+	background: url('vanilla\ cake.jpg') no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	border-radius: 15px;
+}
+
+#row6 {
+	width: 30vw;
+	height: 360px;
+	border: 2px solid  lightslategray;
+	background: url('Strawberry\ Cake.jpg') no-repeat center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	border-radius: 15px;
+}
+
+/*Designing the footer*/
+footer {
+	text-align: center;
+}
+
+/*Designing of Contact Us*/
+#ContactUs {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: gray;
+}
+
+.form-shape input,
+.form-shape select,
+.form-shape textarea {
+	width: 92%;
+	padding: 0.5rem;
+}
+
+/*Changing the color of placeholder*/
+::placeholder {
+	color: gray;
+}
+
+/*Making the webpage responsive using media queries*/
+@media only screen and (max-width:1131px) {
+	#row4 {
+		width: 42vw;
+	}
+
+	#row5 {
+		width: 45vw;
+	}
+
+	#row6 {
+		margin-top: 20px;
+		width: 90vw;
+	}
+}
+
+@media only screen and (min-width:600px) and (max-width:781px) {
+	#row4 {
+		width: 84vw;
+		margin: auto;
+		margin-left: 22px;
+	}
+
+	#row5 {
+
+		width: 84vw;
+		margin: auto;
+		margin-top: 20px;
+		margin-left: 22px;
+	}
+
+	#row6 {
+		width: 84vw;
+		margin: auto;
+		margin-top: 20px;
+		margin-left: 22px;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	#row4 {
+		width: 78vw;
+		margin: auto;
+		margin-left: 3px;
+	}
+
+	#row5 {
+
+		width: 78vw;
+		margin: auto;
+		margin-top: 20px;
+		margin-left: 3px;
+	}
+
+	#row6 {
+		width: 78vw;
+		margin: auto;
+		margin-top: 20px;
+		margin-left: 3px;
+	}
+}
+
+@media only screen and (min-height:1000px) {
+	#navbar {
+		height: 10vh;
+	}
+
+	#container1::before {
+		height: 39vh;
+	}
+
+	#container1 {
+		height: 44vh
+	}
+}
